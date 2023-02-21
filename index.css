@@ -1,0 +1,186 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    background-color: white;
+    background-size:cover;
+    /* overflow: hidden; */
+    font-family: 'Vollkorn', serif;
+    
+    
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    height: 8vh;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    
+}
+
+.contentsChange {
+    height: 100%;
+}
+
+.myDetails {
+    text-align: center;
+    height: 90%;
+}
+
+.heading{
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.options {
+    position: relative;
+    height: 100vh;
+    padding-right: 15%;
+    padding-left: 15%;
+    overflow: hidden;
+}
+
+.circleA {
+    position: absolute;
+    z-index: 0;
+    top: -20%;
+    left:30%;
+    filter: blur(10px);
+    pointer-events: none;
+}
+
+
+
+
+
+.logo {
+    font-size: 1.5em;
+    overflow: hidden;
+    /* padding: 1%; */
+}
+
+
+
+.paths {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    height: 90%;
+    flex:1;
+    gap: 5%;
+    padding: 8% 2% 8% 2%;
+    /* overflow: hidden; */
+    
+}
+
+.section {
+    opacity: 0;
+    background-color: white;
+    /* background-image: linear-gradient(30deg,silver, gold); */
+    position: relative;
+    height: 80%;
+    width: 95%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    overflow: hidden;
+    border: 4px double rgb(190, 190, 190);
+    color: black;
+    font-weight: bold;
+    /* box-shadow: 0 0 30px rgb(77, 74, 74); */
+    text-decoration: none;
+}
+
+.menuSec p{
+    text-decoration: none;
+    color: black;
+}
+
+.section svg {
+    padding-top: 2%;
+    padding-bottom: 5%;
+    /* width: 50%;
+    height: 50%; */
+    /* pointer-events: none; */
+    
+}
+
+.section p {
+    font-size: 1.3em;  
+    padding-bottom: 2%; 
+    /* pointer-events: none; */
+    text-decoration: none;
+}
+
+.angle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    rotate: 5deg;
+    filter: blur(4px);
+    scale: 1.8;
+    pointer-events: none;
+}
+
+.angle2 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    rotate: 180deg;
+    filter: blur(4px);
+    scale: 1.8;
+    pointer-events: none;
+}
+
+
+
+@media (max-width: 700px){
+
+    .options {
+        overflow: visible;
+        padding-right: 2%;
+        padding-left: 2%;
+    }
+    .paths {
+        padding: 0% 0% 0% 0%;
+        height: 80%;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .section {
+        position: relative;
+        /*height: 10%;*/
+        width: 100%;
+        padding-top: 50%;
+    }
+
+    .section svg {
+        padding-top: 0%;
+        padding-bottom: 5%;
+        width: 50%;
+        height: 50%;
+        
+    }
+
+    .circleA {
+        display: none;
+    }
+
+    .angle {
+        display: none;
+    }
+
+    .angle2 {
+        display: none;
+    }
+
+    
+
+  }
